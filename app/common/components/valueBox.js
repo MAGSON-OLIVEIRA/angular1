@@ -1,0 +1,39 @@
+angular.module('primeiroApp').component('valueBox', {
+
+// bindings - >> parametro de entradas do componentes.
+    bindings: {
+        grid: '@',
+        colorClass: '@',
+        value: '@',
+        text: '@',
+        iconClass: '@',
+
+    },
+
+// controllser
+    controller: [
+        'gridSystem',
+        function(gridSystem){
+            //this.$onInit = function(){
+            // usando arofunctions
+            this.$onInit = function(){
+                this.gridClasses = gridSystem.toCssClasses(this.grid)
+            }
+        }
+    ],
+
+    template: `
+    <div class="{{ $ctrl.gridClasses }}" >
+        <div class="small-box {{ $ctrl.colorClass }}">
+            <div  class="inner" >
+                    <h3>{{ $ctrl.value }}</h3>
+                    <p>{{ $ctrl.text }}</p>
+            </div>
+            <div class="icon">
+                <i class="fa {{ $ctrl.iconClass }}"></i>
+            </div>
+        </div>
+    </div>
+    `
+
+})
