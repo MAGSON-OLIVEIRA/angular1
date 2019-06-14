@@ -1,3 +1,5 @@
+(function(){
+
 angular.module('primeiroApp').component('valueBox', {
 
 // bindings - >> parametro de entradas do componentes.
@@ -37,3 +39,5 @@ angular.module('primeiroApp').component('valueBox', {
     `
 
 })
+
+})()

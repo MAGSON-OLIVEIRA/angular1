@@ -4,8 +4,8 @@ angular.module('primeiroApp').component('contentHeader',{
         small: '@',
     },
     template: `
-    <selection class="content-header">
+    <section class="content-header">
         <h1>{{$ctrl.name}}<small>{{$ctrl.small}}</small></h1>
-    </selection>
+    </section>
     `
 })
