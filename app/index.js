@@ -1,7 +1,7 @@
 (function(){
   angular.module('primeiroApp',[
     'ui.router',
-    'ngAnimate',
+   // 'ngAnimate',
     'toastr'
   ])
 })()
