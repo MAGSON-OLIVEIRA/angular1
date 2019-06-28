@@ -12,7 +12,6 @@ angular.module('primeiroApp').component('valueBox', {
 
     },
 
-// controllser
     controller: [
         'gridSystem',
         function(gridSystem){
