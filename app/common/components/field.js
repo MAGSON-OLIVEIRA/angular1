@@ -11,9 +11,6 @@
         },
         controller: [
             'gridSystem',
-           // function(gridSystem){
-            //    this.gridClasses = gridSystem.toCssClasses(this.grid)
-            //}
             function(gridSystem){
                 this.$onInit = function(){
                     this.gridClasses = gridSystem.toCssClasses(this.grid)
